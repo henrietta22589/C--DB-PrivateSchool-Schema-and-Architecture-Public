@@ -1,7 +1,7 @@
 # C# DB Private School Schema and Architecture Public
 This repo uses C# to connect to a DB for a private school management system and extract information
 
-Using an existing MsSQL Database, I developed a program that made a connection to the database and executes a preset number of sql queries. Moreover, it made a connection to the database and inserted input data from the keyboard to the following tables:
+Using an existing MsSQL Database, I developed a program that made a connection to the database and executed a preset number of sql queries. Moreover, it made a connection to the database and inserted input data from the keyboard to the following tables:
 1. students 
 2. trainers
 3. assignments
