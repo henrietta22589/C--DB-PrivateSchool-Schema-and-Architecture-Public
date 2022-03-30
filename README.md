@@ -11,7 +11,7 @@ Using an existing MsSQL Database, I developed a program that made a connection t
 7. assignments per student per course 
 
 
-If you want to check out the Db used to test this application, check out this repo:https://github.com/henrietta22589/SQL-DB-PrivateSchool-Schema-and-Architecture
+If you want to check out the Db used to test this application, check out this repo: https://github.com/henrietta22589/SQL-DB-PrivateSchool-Schema-and-Architecture
 
 ![alt text](https://github.com/henrietta22589/PrivateSchool-DB-Schema-and-Architecture/blob/main/schema.jpg?raw=true)
 
