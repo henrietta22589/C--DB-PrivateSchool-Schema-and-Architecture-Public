@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eriettaDB2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Assignments">
+    <Key>
+      <PropertyRef Name="AssignmentsID" />
+    </Key>
+    <Property Name="AssignmentsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descriptions" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfSubmission" Type="date" Nullable="false" />
+    <Property Name="Mark" Type="int" />
+    <Property Name="Courses" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Courses">
+    <Key>
+      <PropertyRef Name="CoursesID" />
+    </Key>
+    <Property Name="CoursesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TypeOfCourse" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfStart" Type="date" Nullable="false" />
+    <Property Name="DateOfEnd" Type="date" Nullable="false" />
+    <Property Name="Assignments" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="StudentsID" />
+    </Key>
+    <Property Name="StudentsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="DateOfBirth" Type="date" Nullable="false" />
+    <Property Name="TuitionFees" Type="int" />
+    <Property Name="Courses" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Assignments" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Trainers">
+    <Key>
+      <PropertyRef Name="TrainersID" />
+    </Key>
+    <Property Name="TrainersID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Courses" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Assignments" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question1">
+    <Key>
+      <PropertyRef Name="StudentsID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="DateOfBirth" />
+      <PropertyRef Name="Courses" />
+      <PropertyRef Name="Assignments" />
+    </Key>
+    <Property Name="StudentsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="DateOfBirth" Type="date" Nullable="false" />
+    <Property Name="TuitionFees" Type="int" />
+    <Property Name="Courses" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Assignments" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question2' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question2">
+    <Key>
+      <PropertyRef Name="TrainersID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="Courses" />
+      <PropertyRef Name="Assignments" />
+    </Key>
+    <Property Name="TrainersID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Courses" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Assignments" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question3' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question3">
+    <Key>
+      <PropertyRef Name="AssignmentsID" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="DateOfSubmission" />
+      <PropertyRef Name="Courses" />
+    </Key>
+    <Property Name="AssignmentsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfSubmission" Type="date" Nullable="false" />
+    <Property Name="Mark" Type="int" />
+    <Property Name="Courses" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question4' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question4">
+    <Key>
+      <PropertyRef Name="CoursesID" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="TypeOfCourse" />
+      <PropertyRef Name="DateOfStart" />
+      <PropertyRef Name="DateOfEnd" />
+      <PropertyRef Name="Assignments" />
+    </Key>
+    <Property Name="CoursesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TypeOfCourse" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfStart" Type="date" Nullable="false" />
+    <Property Name="DateOfEnd" Type="date" Nullable="false" />
+    <Property Name="Assignments" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question5' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question5">
+    <Key>
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="Title" />
+    </Key>
+    <Property Name="FirstName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question6' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question6">
+    <Key>
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="Title" />
+    </Key>
+    <Property Name="FirstName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question7' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question7">
+    <Key>
+      <PropertyRef Name="CourseTitle" />
+      <PropertyRef Name="AssignTitle" />
+      <PropertyRef Name="DescriptionAssign" />
+    </Key>
+    <Property Name="CourseTitle" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssignTitle" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DescriptionAssign" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eriettaDB2.dbo.Question8' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Question8">
+    <Key>
+      <PropertyRef Name="AssigmentsTitle" />
+      <PropertyRef Name="Descriptions" />
+      <PropertyRef Name="CourseTitle" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+    </Key>
+    <Property Name="AssigmentsTitle" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descriptions" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CourseTitle" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Assignmen__Cours__2B3F6F97' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Assignmen__Cours__2B3F6F97" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Trainers__Course__2D27B809' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Trainers__Course__2D27B809" />-->
+  <EntityContainer Name="eriettaDB2ModelStoreContainer">
+    <EntitySet Name="Assignments" EntityType="Self.Assignments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trainers" EntityType="Self.Trainers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Question1" EntityType="Self.Question1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question1].[StudentsID] AS [StudentsID], 
+    [Question1].[FirstName] AS [FirstName], 
+    [Question1].[LastName] AS [LastName], 
+    [Question1].[DateOfBirth] AS [DateOfBirth], 
+    [Question1].[TuitionFees] AS [TuitionFees], 
+    [Question1].[Courses] AS [Courses], 
+    [Question1].[Assignments] AS [Assignments]
+    FROM [dbo].[Question1] AS [Question1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Question2" EntityType="Self.Question2" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question2].[TrainersID] AS [TrainersID], 
+    [Question2].[FirstName] AS [FirstName], 
+    [Question2].[LastName] AS [LastName], 
+    [Question2].[Courses] AS [Courses], 
+    [Question2].[Assignments] AS [Assignments]
+    FROM [dbo].[Question2] AS [Question2]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Question3" EntityType="Self.Question3" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question3].[AssignmentsID] AS [AssignmentsID], 
+    [Question3].[Title] AS [Title], 
+    [Question3].[Description] AS [Description], 
+    [Question3].[DateOfSubmission] AS [DateOfSubmission], 
+    [Question3].[Mark] AS [Mark], 
+    [Question3].[Courses] AS [Courses]
+    FROM [dbo].[Question3] AS [Question3]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Question4" EntityType="Self.Question4" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question4].[CoursesID] AS [CoursesID], 
+    [Question4].[Title] AS [Title], 
+    [Question4].[TypeOfCourse] AS [TypeOfCourse], 
+    [Question4].[DateOfStart] AS [DateOfStart], 
+    [Question4].[DateOfEnd] AS [DateOfEnd], 
+    [Question4].[Assignments] AS [Assignments]
+    FROM [dbo].[Question4] AS [Question4]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Question5" EntityType="Self.Question5" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question5].[FirstName] AS [FirstName], 
+    [Question5].[LastName] AS [LastName], 
+    [Question5].[Title] AS [Title]
+    FROM [dbo].[Question5] AS [Question5]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Question6" EntityType="Self.Question6" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question6].[FirstName] AS [FirstName], 
+    [Question6].[LastName] AS [LastName], 
+    [Question6].[Title] AS [Title]
+    FROM [dbo].[Question6] AS [Question6]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Question7" EntityType="Self.Question7" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question7].[CourseTitle] AS [CourseTitle], 
+    [Question7].[AssignTitle] AS [AssignTitle], 
+    [Question7].[DescriptionAssign] AS [DescriptionAssign]
+    FROM [dbo].[Question7] AS [Question7]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Question8" EntityType="Self.Question8" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Question8].[AssigmentsTitle] AS [AssigmentsTitle], 
+    [Question8].[Descriptions] AS [Descriptions], 
+    [Question8].[CourseTitle] AS [CourseTitle], 
+    [Question8].[FirstName] AS [FirstName], 
+    [Question8].[LastName] AS [LastName]
+    FROM [dbo].[Question8] AS [Question8]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

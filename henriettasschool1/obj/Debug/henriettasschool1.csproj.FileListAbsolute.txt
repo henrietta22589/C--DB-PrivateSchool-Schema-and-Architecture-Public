@@ -1,0 +1,11 @@
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\bin\Debug\henriettasschool1.exe.config
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\bin\Debug\henriettasschool1.exe
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\bin\Debug\henriettasschool1.pdb
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\bin\Debug\EntityFramework.dll
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\bin\Debug\EntityFramework.xml
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\obj\Debug\henriettasschool1.csproj.AssemblyReference.cache
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\obj\Debug\henriettasschool1.csproj.CoreCompileInputs.cache
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\obj\Debug\henriettasschool1.exe
+C:\Users\Eriettaki\source\repos\henriettasschool1\henriettasschool1\obj\Debug\henriettasschool1.pdb

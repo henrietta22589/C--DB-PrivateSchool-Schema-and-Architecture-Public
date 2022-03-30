@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eriettaDB2ModelStoreContainer" CdmEntityContainer="eriettaDB2Entities">
+    <EntitySetMapping Name="Assignments">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Assignment">
+        <MappingFragment StoreEntitySet="Assignments">
+          <ScalarProperty Name="AssignmentsID" ColumnName="AssignmentsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="DateOfSubmission" ColumnName="DateOfSubmission" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="Courses" ColumnName="Courses" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Cours">
+        <MappingFragment StoreEntitySet="Courses">
+          <ScalarProperty Name="CoursesID" ColumnName="CoursesID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TypeOfCourse" ColumnName="TypeOfCourse" />
+          <ScalarProperty Name="DateOfStart" ColumnName="DateOfStart" />
+          <ScalarProperty Name="DateOfEnd" ColumnName="DateOfEnd" />
+          <ScalarProperty Name="Assignments" ColumnName="Assignments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="StudentsID" ColumnName="StudentsID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="TuitionFees" ColumnName="TuitionFees" />
+          <ScalarProperty Name="Courses" ColumnName="Courses" />
+          <ScalarProperty Name="Assignments" ColumnName="Assignments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trainers">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Trainer">
+        <MappingFragment StoreEntitySet="Trainers">
+          <ScalarProperty Name="TrainersID" ColumnName="TrainersID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Courses" ColumnName="Courses" />
+          <ScalarProperty Name="Assignments" ColumnName="Assignments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question1">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question1">
+        <MappingFragment StoreEntitySet="Question1">
+          <ScalarProperty Name="StudentsID" ColumnName="StudentsID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="TuitionFees" ColumnName="TuitionFees" />
+          <ScalarProperty Name="Courses" ColumnName="Courses" />
+          <ScalarProperty Name="Assignments" ColumnName="Assignments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question2">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question2">
+        <MappingFragment StoreEntitySet="Question2">
+          <ScalarProperty Name="TrainersID" ColumnName="TrainersID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Courses" ColumnName="Courses" />
+          <ScalarProperty Name="Assignments" ColumnName="Assignments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question3">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question3">
+        <MappingFragment StoreEntitySet="Question3">
+          <ScalarProperty Name="AssignmentsID" ColumnName="AssignmentsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DateOfSubmission" ColumnName="DateOfSubmission" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="Courses" ColumnName="Courses" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question4">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question4">
+        <MappingFragment StoreEntitySet="Question4">
+          <ScalarProperty Name="CoursesID" ColumnName="CoursesID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TypeOfCourse" ColumnName="TypeOfCourse" />
+          <ScalarProperty Name="DateOfStart" ColumnName="DateOfStart" />
+          <ScalarProperty Name="DateOfEnd" ColumnName="DateOfEnd" />
+          <ScalarProperty Name="Assignments" ColumnName="Assignments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question5">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question5">
+        <MappingFragment StoreEntitySet="Question5">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question6">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question6">
+        <MappingFragment StoreEntitySet="Question6">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question7">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question7">
+        <MappingFragment StoreEntitySet="Question7">
+          <ScalarProperty Name="CourseTitle" ColumnName="CourseTitle" />
+          <ScalarProperty Name="AssignTitle" ColumnName="AssignTitle" />
+          <ScalarProperty Name="DescriptionAssign" ColumnName="DescriptionAssign" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question8">
+      <EntityTypeMapping TypeName="eriettaDB2Model.Question8">
+        <MappingFragment StoreEntitySet="Question8">
+          <ScalarProperty Name="AssigmentsTitle" ColumnName="AssigmentsTitle" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="CourseTitle" ColumnName="CourseTitle" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
